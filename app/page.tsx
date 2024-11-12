@@ -1,31 +1,13 @@
 "use client";
-import { ComapreDate } from "@/components/CompareSensorDate";
-import { PieChartSensor } from "@/components/PieChart";
-import { Component } from "@/components/StatsSensor";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { type ChartConfig } from "@/components/ui/chart";
+
 import { Download, RefreshCcw, Text } from "lucide-react";
 
-const chartData = [
-  { month: "January", desktop: 186, mobile: 80 },
-  { month: "February", desktop: 305, mobile: 200 },
-  { month: "March", desktop: 237, mobile: 120 },
-  { month: "April", desktop: 73, mobile: 190 },
-  { month: "May", desktop: 209, mobile: 130 },
-  { month: "June", desktop: 214, mobile: 140 },
-];
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { ComapreDate } from "@/components/CompareSensorDate";
+import { Component } from "@/components/StatsSensor";
+import { PieChartSensor } from "@/components/PieChart";
 
-const chartConfig = {
-  desktop: {
-    label: "Desktop",
-    color: "#2563eb",
-  },
-  mobile: {
-    label: "Mobile",
-    color: "#60a5fa",
-  },
-} satisfies ChartConfig;
 export default function Home() {
   return (
     <main className="flex flex-col items-start p-10 gap-4 pb-20">

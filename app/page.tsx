@@ -22,7 +22,7 @@ export default function Home() {
         <div>
           Status activitate:{" "}
           <span className="text-green-700 bg-green-500/20 rounded-lg text-xs py-1 px-4">
-            Inregistrare date
+            Inregistrare date.
           </span>
         </div>
       </Card>

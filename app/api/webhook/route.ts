@@ -3,7 +3,8 @@ export async function POST(request: Request) {
     const text = await request.text();
     console.log("Received payload:", text);
   } catch (error) {
-    return new Response(`Webhook error: ${error.message}`, {
+    const errorMessage = (error as Error).message;
+    return new Response(`Webhook error: ${errorMessage}`, {
       status: 400,
     });
   }

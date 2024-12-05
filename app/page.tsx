@@ -6,11 +6,16 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ComapreDate } from "@/components/CompareSensorDate";
 import { Component } from "@/components/StatsSensor";
+import Image from "next/image";
 import { PieChartSensor } from "@/components/PieChart";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-start p-10 gap-4 pb-20">
+      <div className="flex items-center gap-4">
+        <Image src={"/logoupet.png"} width={100} height={40} alt="upetlogo" />
+        <Image src={"/logomine.png"} width={100} height={40} alt="upetlogo" />
+      </div>
       <h1 className="text-2xl font-semibold">Datele senzorului de deformare</h1>
       <Card className="text-sm font-medium p-4 text-muted-foreground w-full">
         ID senzor: <span className="text-primary">12did12sf3</span>
